@@ -15,12 +15,21 @@
   --accent-btn-bgc: #2196f3;
   --hover-hero-btn-color: #188ce8;
   --footer-links-color: rgba(255, 255, 255, 0.6);
+  --body-bgc: #fff;
+  --header-bgc: #fff;
+  --hero-bgc: #2f303a;
+  --benefits-bgc: #fff;
+  --works-bgc: #fff;
+  --teams-bgc: #f5f4fa;
+  --portfolio-bgc: #fff;
+  --footer-bgc: #2f303a;
 }
 
 body {
   font-family: var(--main-font);
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  background-color: var(--body-bgc);
 }
 
 .list {
@@ -94,7 +103,7 @@ body {
 }
 
 .header {
-  background-color: #fff;
+  background-color: var(--header-bgc);
 }
 
 .header-logo.logo {
@@ -110,7 +119,7 @@ body {
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-bgc);
 }
 
 .hero-title {
@@ -137,7 +146,7 @@ body {
 }
 
 .benefits {
-  background-color: #fff;
+  background-color: var(--benefits-bgc);
 }
 
 .benefits-item-title {
@@ -152,11 +161,11 @@ body {
 }
 
 .works {
-  background-color: #fff;
+  background-color: var(--works-bgc);
 }
 
 .teams {
-  background-color: #f5f4fa;
+  background-color: var(--teams-bgc);
 }
 
 .teams-item-title {
@@ -171,7 +180,7 @@ body {
 }
 
 .portfolio {
-  background-color: #fff;
+  background-color: var(--portfolio-bgc);
 }
 
 .portfolio-filter-btn {
@@ -202,7 +211,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bgc);
 }
 
 .footer-logo.logo {
