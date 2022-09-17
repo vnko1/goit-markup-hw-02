@@ -80,7 +80,6 @@ body {
   line-height: calc(24 / 14);
 }
 
-/* -------------------HEADER--------------------- */
 .header {
   background-color: #fff;
 }
@@ -103,8 +102,6 @@ body {
 .header-contacts-link:focus {
   color: var(--accent-color);
 }
-
-/* ----------------HERO------------------------------ */
 
 .hero {
   background-color: #2f303a;
@@ -133,7 +130,6 @@ body {
   background-color: #188ce8;
 }
 
-/* ------------------BENEFITS-------------------------- */
 .benefits {
   background-color: #fff;
 }
@@ -149,13 +145,10 @@ body {
   line-height: calc(24 / 14);
 }
 
-/* --------------------WORKS--------------------------- */
-
 .works {
   background-color: #fff;
 }
 
-/* ----------------------TEAMS------------------------ */
 .teams {
   background-color: #f5f4fa;
 }
@@ -171,7 +164,6 @@ body {
   line-height: calc(19 / 16);
 }
 
-/* ------------------------PORTFOLIO------------------ */
 .portfolio {
   background-color: #fff;
 }
@@ -202,8 +194,6 @@ body {
   line-height: calc(30 / 16);
   color: var(--main-text-color);
 }
-
-/* ------------------------FOOTER--------------------- */
 
 .footer {
   background-color: #2f303a;
