@@ -1,21 +1,25 @@
 :root {
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
-  --letter-space: 0.03em;
-  --hero-title-color: #ffffff;
+  --header-logo-color: #000;
+  --footer-logo-color: #fff;
+  --hero-title-color: #fff;
   --main-title-color: #212121;
   --link-color: #212121;
   --main-text-color: #757575;
+  --secondary-text-color: #fff;
   --accent-color: #2196f3;
   --btn-color: #212121;
   --btn-bgc: #f5f4fa;
-  --accent-btn-clr: #ffffff;
+  --accent-btn-color: #fff;
   --accent-btn-bgc: #2196f3;
+  --hover-hero-btn-color: #188ce8;
+  --footer-links-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: var(--main-font);
-  letter-spacing: var(--letter-space);
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
@@ -59,6 +63,15 @@ body {
   letter-spacing: 0.02em;
 }
 
+.header-links:hover,
+.header-links:focus,
+.footer-links:hover,
+.footer-links:focus,
+.footer-links.address:hover,
+.footer-links.address:focus {
+  color: var(--accent-color);
+}
+
 .header-nav-link.current {
   color: var(--accent-color);
 }
@@ -85,7 +98,7 @@ body {
 }
 
 .header-logo.logo {
-  color: #000000;
+  color: var(--header-logo-color);
 }
 
 .header-nav-link {
@@ -94,13 +107,6 @@ body {
 
 .header-contacts-link {
   color: currentColor;
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  color: var(--accent-color);
 }
 
 .hero {
@@ -122,12 +128,12 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   background-color: var(--accent-btn-bgc);
-  color: var(--accent-btn-clr);
+  color: var(--accent-btn-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--hover-hero-btn-color);
 }
 
 .benefits {
@@ -180,7 +186,7 @@ body {
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background-color: var(--accent-btn-bgc);
-  color: var(--accent-btn-clr);
+  color: var(--accent-btn-color);
 }
 
 .portfolio-works-title {
@@ -200,7 +206,7 @@ body {
 }
 
 .footer-logo.logo {
-  color: #fff;
+  color: var(--footer-logo-color);
 }
 
 .footer-address {
@@ -208,9 +214,9 @@ body {
 }
 
 .footer-item-link.address {
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
 .footer-item-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-links-color);
 }
