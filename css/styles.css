@@ -2,34 +2,24 @@
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
   --header-logo-color: #000;
-  --footer-logo-color: #fff;
-  --hero-title-color: #fff;
-  --main-title-color: #212121;
-  --link-color: #212121;
+  --main-color: #212121;
+  --secondary-color: #fff;
   --main-text-color: #757575;
-  --secondary-text-color: #fff;
   --accent-color: #2196f3;
-  --btn-color: #212121;
   --btn-bgc: #f5f4fa;
-  --accent-btn-color: #fff;
-  --accent-btn-bgc: #2196f3;
   --hover-hero-btn-color: #188ce8;
   --footer-links-color: rgba(255, 255, 255, 0.6);
-  --body-bgc: #fff;
-  --header-bgc: #fff;
-  --hero-bgc: #2f303a;
-  --benefits-bgc: #fff;
-  --works-bgc: #fff;
+  --main-bgc: #fff;
+  --secondary-bgc: #2f303a;
   --teams-bgc: #f5f4fa;
-  --portfolio-bgc: #fff;
-  --footer-bgc: #2f303a;
 }
 
 body {
   font-family: var(--main-font);
+  font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  background-color: var(--body-bgc);
+  background-color: var(--main-bgc);
 }
 
 .list {
@@ -67,7 +57,6 @@ body {
 
 .header-links {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -94,16 +83,15 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  color: var(--main-title-color);
+  color: var(--main-color);
 }
 
 .footer-links {
-  font-size: 14px;
   line-height: calc(24 / 14);
 }
 
 .header {
-  background-color: var(--header-bgc);
+  background-color: var(--main-bgc);
 }
 
 .header-logo.logo {
@@ -111,7 +99,7 @@ body {
 }
 
 .header-nav-link {
-  color: var(--link-color);
+  color: var(--main-color);
 }
 
 .header-contacts-link {
@@ -119,7 +107,7 @@ body {
 }
 
 .hero {
-  background-color: var(--hero-bgc);
+  background-color: var(--secondary-bgc);
 }
 
 .hero-title {
@@ -129,15 +117,15 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-title-color);
+  color: var(--secondary-color);
 }
 .hero-btn {
   font-family: inherit;
   font-weight: 700;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  background-color: var(--accent-btn-bgc);
-  color: var(--accent-btn-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .hero-btn:hover,
@@ -146,22 +134,21 @@ body {
 }
 
 .benefits {
-  background-color: var(--benefits-bgc);
+  background-color: var(--main-bgc);
 }
 
 .benefits-item-title {
-  font-size: 14px;
+  font-size: inherit;
   line-height: calc(16 / 14);
-  color: var(--main-title-color);
+  color: var(--main-color);
 }
 
 .benefits-item-text {
-  font-size: 14px;
   line-height: calc(24 / 14);
 }
 
 .works {
-  background-color: var(--works-bgc);
+  background-color: var(--main-bgc);
 }
 
 .teams {
@@ -172,15 +159,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  color: var(--main-title-color);
+  color: var(--main-color);
 }
 
 .teams-item-text {
+  font-size: 16px;
   line-height: calc(19 / 16);
 }
 
 .portfolio {
-  background-color: var(--portfolio-bgc);
+  background-color: var(--main-bgc);
 }
 
 .portfolio-filter-btn {
@@ -189,33 +177,34 @@ body {
   line-height: calc(26 / 16);
   letter-spacing: inherit;
   background-color: var(--btn-bgc);
-  color: var(--btn-color);
+  color: var(--main-color);
 }
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
-  background-color: var(--accent-btn-bgc);
-  color: var(--accent-btn-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .portfolio-works-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--main-title-color);
+  color: var(--main-color);
 }
 
 .portfolio-works-text {
+  font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--main-text-color);
 }
 
 .footer {
-  background-color: var(--footer-bgc);
+  background-color: var(--secondary-bgc);
 }
 
 .footer-logo.logo {
-  color: var(--footer-logo-color);
+  color: var(--secondary-color);
 }
 
 .footer-address {
@@ -223,7 +212,7 @@ body {
 }
 
 .footer-item-link.address {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
 }
 
 .footer-item-link {
